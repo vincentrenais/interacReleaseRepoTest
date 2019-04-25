@@ -3,10 +3,12 @@
 ![](Images/proximity-interactions.png)
 
 ## Getting started mobile platform
-    [Getting Started iOS](ios-getting-started.md)
-    [Getting Started Android](android-getting-started.md)
+
+[Getting Started iOS](ios-getting-started.md)
+[Getting Started Android](android-getting-started.md)
 
 ## Authentication
+
 The Proximity SDK accesses the API Overlay with various secured https requests. A JWT Auth Token passed to the SDK is required to complete these requests. To avoid a double log in scenario, a shared secret has been provided, intended to be used by a financial institution controlled trusted authority to generate authentication tokens. User tokens can be requested from said trusted authority. Do not generated tokens in the application codebase!
 
 ### Token Format
