@@ -1,7 +1,6 @@
 # Proximity SDK
 
 ![](Images/proximity-interactions.png)
-[SDK Data Flow](Images/sdk-data-flow.png)
 
 ## Data Flow
 
