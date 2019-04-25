@@ -226,9 +226,9 @@ __OBJECTIVE-C__
 
 The SDK is using delegation to call back the app once a request or send transfer has been initiated.
 
-One class should conform to the protocol `InteracProximitySDKDelegate` and set itself as the `delegate` of the `InteracProximitySDK`
+The class that was set as the delegate of the SDK should implement the following method:
 
-Implement the delegate method: `interacProximitySDK:didInitiateTransferToUserId:nickname:amount:accountId:completionHandler:`
+`interacProximitySDK:didInitiateTransferToUserId:nickname:amount:accountId:completionHandler:`
 
 In the completion handler, return `true` or `false` to indicate whether the transfer was successful or not.
 
