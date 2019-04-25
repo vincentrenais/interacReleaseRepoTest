@@ -2,7 +2,7 @@
 
 ![](Images/proximity-interactions.png)
 
-## Getting started mobile platform
+## Getting started on the mobile platforms
 
 [Getting Started iOS](ios-getting-started.md)
 

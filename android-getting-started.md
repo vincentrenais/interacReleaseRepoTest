@@ -90,7 +90,7 @@ Make sure to check following points
 		`tools:replace="android:theme"`
 
 
-### Step 3 Create and show the SDK
+### Step 3 - Create and show the SDK
 Initialise SDK with above information
 
 	val sdkInitializer = INPInitializer(customerInfo, this@MainActivityKotlin as INPProximityCallback)
@@ -99,7 +99,7 @@ Now lauch the SDK with your custom theme
 
 	    sdkInitializer.launchProximity(this@HomeScreenActivity, theme)
 
-### STEP 4 - LISTEN TO THE SDK CALLBACKS
+### Step 4 - Listen to the SDK callbacks
 The SDK is using INPProximityCallback interface to call back the app once a request or send transfer has been initiated.
 
 	 fun showProximityError(errorMessage: String)
