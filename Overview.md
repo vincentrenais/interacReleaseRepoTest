@@ -1,6 +1,7 @@
 # Proximity SDK
 
 ![](Images/proximity-interactions.png)
+![](Images/sdk-data-flow.png)
 
 ## Getting started on the mobile platforms
 
