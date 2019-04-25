@@ -4,7 +4,7 @@
 Before you can build and use the Proximity SDK on Android, the following must be true:
 
 - You have a Financial Institution ID. This should be provided to you by Interac and will be used to generate a unique API Key.
-- Your App min SDK supported is Android 6 or newer. 
+- Your App min SDK supported is Android 6 or newer.
 
 ### Step 1 - Add the Proximity SDK to your native project
 
@@ -16,7 +16,7 @@ Manual installation
 - on the New Modal window - select  import .AAR/.JAR package.
 - Select the .aar file you downloaded and click finish.
 
-![](add-dependency.png)
+![](Images/add-dependency.png)
 
 - Now again on `project structure` widow click on your app module and go to dependencies tab.
 - Click + on bottom-left and select `Module dependency` and select Proximity module as your dependency.
@@ -28,7 +28,7 @@ Add following in your module's build.gradle file, if you don't have them already
      implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.0'
      implementation 'com.github.bumptech.glide:glide:4.9.0'
      annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
-     
+
 Sync your project gradle and you are good to go!
 
 ### Step 2 - Setup SDK
@@ -44,7 +44,7 @@ The SDK needs the following information:
 		listOfAccounts: List<INPAccount>
 		sendLimit: Double? = null
 		accountFee: Double? = null
-		
+
 You need to pass INPCustomerInfo on SDK Initialisation
 
 - Auth token:  JSON Web Token created by your server using the `Financial Institution ID`, a shared secret and the following payload:
@@ -55,23 +55,23 @@ You need to pass INPCustomerInfo on SDK Initialisation
 			"first_name": "<User First Name>",
 			"last_name": "<User Last Name>"
 		}
-            
+
 - An INPAccount object: This object represents a bank account
 
 		accountId: String
 		accountName: String
 		accountNumber: String
 		accountBalance: Double
-		
+
 	add all the account related to user as `listOfAccounts` in `INPCustomerInfo`
 
-- An INPTheme object: This is how you can customize the appearance of the SDK for your brand: 
+- An INPTheme object: This is how you can customize the appearance of the SDK for your brand:
 
 You can add two base colors representing your brand - inpPrimaryColor and inpSecondaryColor and one contrast color for each.
 Also add your logo drawable in your res/drawable folder and add it to syles as inpLogoImage
 
 To apply your own theme to the SDK, declare following styles in your res/values/styles.xml file
- 
+
 		<style name="INP_theme_RBC" parent="INP_theme">
 	        <item name="inpPrimaryColor">@color/colorRBCPrimary</item>
 	        <item name="inpSecondaryColor">@color/colorRBCSecondary</item>
@@ -94,11 +94,11 @@ Make sure to check following points
 Initialise SDK with above information
 
 	val sdkInitializer = INPInitializer(customerInfo, this@MainActivityKotlin as INPProximityCallback)
-     
+
 Now lauch the SDK with your custom theme
-			          		  
+
 	    sdkInitializer.launchProximity(this@HomeScreenActivity, theme)
-	    
+
 ### STEP 4 - LISTEN TO THE SDK CALLBACKS
 The SDK is using INPProximityCallback interface to call back the app once a request or send transfer has been initiated.
 
