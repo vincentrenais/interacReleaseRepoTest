@@ -1,7 +1,7 @@
 # Proximity SDK
 
 ![](Images/proximity-interactions.png)
-![](Images/add-dependency.png)
+
 ## Getting started mobile platform
     [Getting Started iOS](ios-getting-started.md)
     [Getting Started Android](android-getting-started.md)
