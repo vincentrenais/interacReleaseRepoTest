@@ -111,8 +111,6 @@ __OBJECTIVE-C__
 [InteracProximitySDK setAPIKey:@"<Interac Proximity API Key>"];
 ```
 
-## Step 3 - Create and launch the SDK
-
 Now that your SDK is instantiated, you need to configure it before you can launch it. The SDK provides some objects you need to create and pass to the launch method.
 
 - `INPTheme`: This object will define the customization of the SDK to fit your brand:
@@ -196,7 +194,9 @@ INPCustomerInfo *customerInfo = [[INPCustomerInfo alloc] initWithInteracUUID:@"4
 	   listOfAccounts:accounts];
 ```
 
-Once all the required objects have been created you can call the launch method and pass the previously created theme and customer info objects.
+## Step 3 - Launch the SDK
+
+Once all the required objects have been created you can call the launch method and pass the previously created `theme` and `customerInfo` objects.
 
 __SWIFT__
 ```
@@ -214,6 +214,7 @@ __OBJECTIVE-C__
                     customerInfo:customerInfo
 			                  delegate:self];
 ```
+
 ### Step 4 - Listen to the SDK callbacks
 
 The SDK is using delegation to call back the app once a request or send transfer has been initiated.
