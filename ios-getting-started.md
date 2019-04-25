@@ -231,6 +231,3 @@ The class that was set as the delegate of the SDK should implement the following
 `interacProximitySDK:didInitiateTransferToUserId:nickname:amount:accountId:completionHandler:`
 
 In the completion handler, return `true` or `false` to indicate whether the transfer was successful or not.
-
-## Add the SDK to your React Native project
-## Add the SDK to your Flutter project
