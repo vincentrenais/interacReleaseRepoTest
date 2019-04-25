@@ -3,6 +3,10 @@
 ![](Images/proximity-interactions.png)
 [SDK Data Flow](Images/sdk-data-flow.png)
 
+## Data Flow
+
+[SDK Data Flow](Images/sdk-data-flow.png)
+
 ## Getting started on the mobile platforms
 
 [Getting Started iOS](ios-getting-started.md)
