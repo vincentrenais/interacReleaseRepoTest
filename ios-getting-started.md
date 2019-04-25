@@ -218,9 +218,9 @@ InteracProximitySDK.sharedInstance().presentModallyOverViewController(
 __OBJECTIVE-C__
 ```
 [[InteracProximitySDK sharedInstance] presentModallyOverViewController:self
-													 																			 theme:theme
-																													customerInfo:customerInfo
-																															delegate:self];
+                                                                 theme:theme
+                                                          customerInfo:customerInfo
+																													    delegate:self];
 ```
 
 ### Step 4 - Listen to the SDK callbacks
