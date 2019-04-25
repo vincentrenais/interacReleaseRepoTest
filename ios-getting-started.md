@@ -111,7 +111,9 @@ __OBJECTIVE-C__
 [InteracProximitySDK setAPIKey:@"<Interac Proximity API Key>"];
 ```
 
-Now that your SDK is instantiated, you need to configure it before you can launch it. The SDK provides some objects you need to create and pass to the launch method.
+Now that your SDK is instantiated, you need to configure it. The launch method expects some objects you need to create ahead of time.
+
+#### INPTheme
 
 - `INPTheme`: This object will define the customization of the SDK to fit your brand:
 
@@ -141,6 +143,8 @@ theme.secondaryColor = [UIColor colorWithRed:0.328 green:0.727 blue:0.281 alpha:
 theme.secondaryContrastColor = [UIColor whiteColor];
 ```
 
+#### INPAccount
+
 - `INPAccount`: This object represents a bank account:
 	- identifier: String
 	- accountNumber: String
@@ -169,6 +173,8 @@ INPAccount *chequingAccount = [[INPAccount alloc] initWithIdentifier:@"241575478
 				           limit:[[NSDecimalNumber alloc] initWithString:@"500"]
 							       fee:[[NSDecimalNumber alloc] initWithString:@"0"]];
 ```
+
+#### INPCustomerInfo
 
 - `INPCustomerInfo`: This object contains all the customer's information:
 	- firstName: String
