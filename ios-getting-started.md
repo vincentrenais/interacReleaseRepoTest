@@ -115,7 +115,7 @@ Now that your SDK is instantiated, you need to configure it. The launch method e
 
 ### INPTheme
 
-- This object will define the customization of the SDK to fit your brand:
+This object will define the customization of the SDK to fit your brand:
 
 	- primaryColor: UIColor
 	- primaryContrastColor: UIColor
@@ -145,7 +145,8 @@ theme.secondaryContrastColor = [UIColor whiteColor];
 
 ### INPAccount
 
-- This object represents a bank account:
+This object represents a bank account:
+
 	- identifier: String
 	- accountNumber: String
 	- name: String
@@ -176,7 +177,8 @@ INPAccount *chequingAccount = [[INPAccount alloc] initWithIdentifier:@"241575478
 
 ### INPCustomerInfo
 
-- This object contains all the customer's information:
+This object contains all the customer's information:
+
 	- firstName: String
 	- lastName: String
 	- interacUUID: String
