@@ -1,4 +1,4 @@
-## Proximity SDK
+# Getting Started with the Android Proximity SDK
 
 ### Before You Begin
 Before you can build and use the Proximity SDK on Android, the following must be true:

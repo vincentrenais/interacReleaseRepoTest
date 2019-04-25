@@ -1,3 +1,5 @@
+# Getting Started with the iOS Proximity SDK
+
 ## Required
 
 Before you can build and use the Proximity SDK on iOS, the following must be true:
@@ -16,7 +18,7 @@ To install using [Cocoapods](https://cocoapods.org), add the following to your `
 __Latest__
 
 ```
-source 'https://ext-01.ghent.interac.ca/UnifiedSDK/IOSProximitySDK' 
+source 'https://ext-01.ghent.interac.ca/UnifiedSDK/IOSProximitySDK'
 
 target :YourTargetName do
 	pod 'InteracProximitySDK', '~>0.1.1'
@@ -211,7 +213,7 @@ __OBJECTIVE-C__
                            theme:theme
                     customerInfo:customerInfo
 			                  delegate:self];
-```	
+```
 ### Step 4 - Listen to the SDK callbacks
 
 The SDK is using delegation to call back the app once a request or send transfer has been initiated.
