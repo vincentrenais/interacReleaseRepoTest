@@ -113,7 +113,7 @@ __OBJECTIVE-C__
 
 Now that your SDK is instantiated, you need to configure it. The launch method expects some objects you need to create ahead of time.
 
-#### INPTheme
+### INPTheme
 
 - `INPTheme`: This object will define the customization of the SDK to fit your brand:
 
@@ -143,7 +143,7 @@ theme.secondaryColor = [UIColor colorWithRed:0.328 green:0.727 blue:0.281 alpha:
 theme.secondaryContrastColor = [UIColor whiteColor];
 ```
 
-#### INPAccount
+### INPAccount
 
 - `INPAccount`: This object represents a bank account:
 	- identifier: String
@@ -174,7 +174,7 @@ INPAccount *chequingAccount = [[INPAccount alloc] initWithIdentifier:@"241575478
 							       fee:[[NSDecimalNumber alloc] initWithString:@"0"]];
 ```
 
-#### INPCustomerInfo
+### INPCustomerInfo
 
 - `INPCustomerInfo`: This object contains all the customer's information:
 	- firstName: String
